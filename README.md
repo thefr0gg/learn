@@ -2,10 +2,6 @@
 
 > This is a port of [amosblomqvist/learn](https://github.com/amosblomqvist/learn) from the [Pi](https://github.com/earendil-works/pi) agent harness to Claude Code.
 
-My AI learning system from this video: [How I Use AI to Learn Things](https://www.youtube.com/watch?v=kzcI5F4tGiU).
-
-This is a personal system I built for myself, shared as-is. A Claude Code configuration: the teaching philosophy encoded in a skill, two MCP servers, a hook, and agent definitions.
-
 ## What's in it
 
 - `.claude/skills/teach/` — the philosophy and the process
