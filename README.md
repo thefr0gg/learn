@@ -1,6 +1,6 @@
 # learn
 
-[![video](assets/thumbnail.png)](https://www.youtube.com/watch?v=kzcI5F4tGiU)
+> This is a port of [amosblomqvist/learn](https://github.com/amosblomqvist/learn) from the [Pi](https://github.com/earendil-works/pi) agent harness to Claude Code.
 
 My AI learning system from this video: [How I Use AI to Learn Things](https://www.youtube.com/watch?v=kzcI5F4tGiU).
 
