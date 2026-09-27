@@ -15,7 +15,5 @@ it's actually relevant.
   (graded quiz questions, paired with the built-in AskUserQuestion tool) and
   `learn-visual-tools` (Mermaid/SVG authoring + rendering tools for the maker
   subagents).
-
-This repo also still works unmodified as a Pi `.pi` config (see README) —
-everything under `.claude/`, `.mcp.json`, and `mcp-servers/` is additive and
-doesn't affect that path.
+- `.claude/hooks/md-log.mjs` — mirrors the session to a linked markdown file,
+  wired via `.claude/settings.json` hooks and the `/md-log`/`/md-unlog` commands.

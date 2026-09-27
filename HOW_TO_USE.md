@@ -1,8 +1,8 @@
-# How to use this with Claude Code
+# How to use this
 
-This assumes you've already done the one-time setup in the README ("With Claude
-Code" section): `npm install` in both `mcp-servers/*` directories, and either
-working at this repo's root or having `.claude/`, `CLAUDE.md`, `.mcp.json`, and
+This assumes you've already done the one-time setup in the README's "Install"
+section: `npm install` in both `mcp-servers/*` directories, and either working
+at this repo's root or having `.claude/`, `CLAUDE.md`, `.mcp.json`, and
 `mcp-servers/` copied into your project.
 
 ## Starting a session
@@ -68,10 +68,7 @@ always include:
   answering.
 
 Right after you answer, the model relays feedback in its next chat message:
-whether you got it right, the correct answer, and an explanation. This is a
-deliberate difference from the original Pi version, which drew the ✓/✗
-feedback as its own popup panel — under Claude Code it's just the model's next
-reply.
+whether you got it right, the correct answer, and an explanation.
 
 ## Getting a diagram
 
@@ -103,9 +100,8 @@ markdown, and embedded diagrams all render), link a markdown file:
 From that point on, new user prompts, assistant prose, and graded-quiz Q&A
 blocks get appended to that file as the session continues. **This does not
 backfill anything said before you ran `/md-log`** — only new turns are
-mirrored, which is a deliberate difference from the original Pi version.
-Point it at a file inside an Obsidian vault to get inline-rendered diagrams
-and LaTeX for free.
+mirrored. Point it at a file inside an Obsidian vault to get inline-rendered
+diagrams and LaTeX for free.
 
 Stop mirroring with:
 
@@ -152,8 +148,3 @@ use the researcher subagent to look into <topic>
   if the model calls `grade_quiz` with a stale or already-used `quizId`, it'll
   get an explicit "unknown or expired quizId" error back and should just call
   `prepare_quiz` again rather than guessing.
-
-**You want the old Pi behavior back for a specific piece**
-- Nothing under `agents/`, `extensions/`, `skills/` changed, so
-  `git clone` this repo as `.pi` and run it under Pi exactly as before — the
-  two setups coexist in this one repo.
