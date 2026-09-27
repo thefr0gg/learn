@@ -1,0 +1,22 @@
+{
+  "name": "@learn/mcp-visual-tools",
+  "version": "0.1.0",
+  "description": "MCP server exposing write/edit/render tools for Mermaid and SVG diagrams, for Claude Code's mermaid-maker/svg-maker subagents. Claude Code equivalent of the Pi extensions/visual-tools extension.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mermaid-js/mermaid-cli": "^11.4.2",
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.5.0"
+  }
+}

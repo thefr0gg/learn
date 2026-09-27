@@ -16,3 +16,5 @@ __pycache__/
 # Runtime state
 .memory/
 *.log
+.claude/.md-log-target
+.claude/.md-log-offset

@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/md-log.mjs stop"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "mcp__learn-quiz-ask__grade_quiz",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/md-log.mjs grade"
+          }
+        ]
+      }
+    ]
+  }
+}

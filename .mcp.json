@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "learn-quiz-ask": {
+      "command": "npx",
+      "args": ["-y", "tsx", "mcp-servers/quiz-ask/src/index.ts"]
+    },
+    "learn-visual-tools": {
+      "command": "npx",
+      "args": ["-y", "tsx", "mcp-servers/visual-tools/src/index.ts"]
+    }
+  }
+}

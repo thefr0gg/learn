@@ -1,0 +1,21 @@
+{
+  "name": "@learn/mcp-quiz-ask",
+  "version": "0.1.0",
+  "description": "MCP server exposing prepare_quiz/grade_quiz tools that pair with Claude Code's built-in AskUserQuestion tool to reproduce Pi's graded `quiz` extension.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.5.0"
+  }
+}
